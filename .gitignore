@@ -1,3 +1,4 @@
-images/*
-metadata/*
-uris/*
+images/*.png
+metadata/*.json
+uris/*.txt
+uris/*.pickle
