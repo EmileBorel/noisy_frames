@@ -68,7 +68,7 @@ def set_pixel_values(idx, mat_size):
             return [rgbs for _ in range(mat_size*mat_size)]
         
         else:
-            if randomness < 2:
+            if randomness < 3:
                 rgbs = np.random.choice(range(256), size= 2)
                 rgbs_dims = np.random.choice(range(3), size = 2)
             
@@ -90,7 +90,7 @@ def set_pixel_values(idx, mat_size):
     
     rgbs = np.random.choice(range(256), size= 3)
     
-    if randomness < 5:
+    if randomness < 6:
         colors = apply_freedom(colors, randomness)
     
     mat = np.array(colors).reshape((mat_size,mat_size,3))
