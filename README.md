@@ -29,6 +29,8 @@ The lowest the "Combined Randomness" & the "Pixel Sum" the rarest.
 
 
 
+
+
 # create
 run make_collection.py
 

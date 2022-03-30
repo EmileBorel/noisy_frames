@@ -144,6 +144,8 @@ def main():
     i= 0
     
     while i < MAX_NB_IMAGES:
+        if int(i) % 33 == 0:
+            print(f"{i}/{MAX_NB_IMAGES}") 
         i+= 1
         
         metadata = {"attributes": []}
@@ -185,8 +187,7 @@ def main():
         with open(f'metadata/{i}.json', "w") as file:
             json.dump(metadata, file)
 
-        if int(i) % 33 == 0:
-            print(f"{i}/{MAX_NB_IMAGES}") 
+
 
 
 if __name__ == "__main__":
