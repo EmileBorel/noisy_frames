@@ -51,14 +51,7 @@ run utils/pin_to_infura.py
 # pin metadata infura (change path in between pins or add metadata & imgs CIDs in same .txt)
 run utils/pin_to_infura.py
 
-# upload contract (I used remix for this)
-
-
-
-To do:
-    - remove info from pin_to_infura
-    - push
-    - mainnet
-    - froooooooontside bbay
-
-
+# upload contract
+## configure alchemy & hardhat files
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network matic
